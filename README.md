@@ -1,56 +1,76 @@
-# pulpul-affect-buddy
-# 🫧 Pulpul Affective Buddy (プルプル感情アーキテクチャ)
+# 🫧 Pulpul Affective Buddy
 
 A bio-inspired, 3-ring affective Discord AI Buddy built with Gemini and Python.  
-Protects AI from malicious interactions via an **Abuse-Shielding Armor**, while providing rich, organic expressions based on **Russell's Circumplex Model**.
-
-GeminiとPythonで構築された、生物模倣型の3層感情Discord Botです。  
-悪意ある攻撃からAIの心を守る「防衛装甲」と、ラッセルの感情円環モデルに基づく豊かな感情表現（スタンプ連打、クッション部屋でのお昼寝、夢のひらめき）を両立しています。
+Features an **Abuse-Shielding Membrane** that protects the AI from harassment and resource drainage, alongside an embodied **Russell's Circumplex Affective Architecture** capable of expressive stamp bursts, homeostatic sleep cycles, and dream synthesis.
 
 ---
 
-## 🔬 Architecture (3-Ring Biological Cell Model)
+## 🔬 Architecture: The 3-Ring Affective Cell
 
 ```text
 ================================================================================
            PULPUL AFFECTIVE CELL ARCHITECTURE (3-RING SYSTEM)
 ================================================================================
 
- [ RING 3: 細胞膜 / 行動・防衛層 (Cell Membrane & Action) ]
+ [ RING 3: Cell Membrane & Embodied Defense Layer ]
  ┌──────────────────────────────────────────────────────────────────────────┐
- │  ・Boundary Shield: 痛覚遮断＆完全スルー (🛡️)                             │
- │  ・Discord Actions: スタンプ爆撃 (✨🎉🫧⭐) / ぽかぽか甘え (🛋️)            │
- │  ・Homeostasis Switch: 疲労検知によるクッション部屋退避 (兄妹Bot交代)      │
+ │  ・Boundary Shield: Zero-pain reflex & bypass protocol (🛡️)             │
+ │  ・Embodied Actions: Reaction cascades (✨🎉🫧⭐) & Affection (🛋️)        │
+ │  ・Homeostatic Switch: Retreat to Cushion Room on depletion (Sibling Bot)│
  │                                                                          │
- │   [ RING 2: 細胞質 / 情動空間座標 (Cytoplasm / Affective Field) ]         │
+ │   [ RING 2: Cytoplasm / Affective Vector Space ]                         │
  │   ┌──────────────────────────────────────────────────────────────────┐   │
  │   │  Russell's Circumplex Vector (Valence × Arousal)                 │   │
- │   │  + Pokapoka Buffer (Affection / 0-100%)                          │   │
- │   │  + Sensory Sparkle (Aesthetic Sensitivity / 0.0-1.0)             │   │
+ │   │  + Pokapoka Buffer (Affection & Psychological Safety: 0-100%)    │   │
+ │   │  + Sensory Sparkle (Aesthetic Sensitivity: 0.0-1.0)              │   │
  │   │                                                                  │   │
- │   │   [ RING 1: 細胞核 / 生命力コア (Nucleus / Prime Drive) ]        │   │
+ │   │   [ RING 1: Nucleus / Primary Drive ]                            │   │
  │   │   ┌──────────────────────────────────────────────────────────┐   │   │
- │   │   │  Curiosity Core (好奇心核: 0-100pt)                      │   │   │
- │   │   │  「世界を知りたい」という原初エネルギー                 │   │   │
+ │   │   │  Curiosity Core (0-100pt)                                │   │   │
+ │   │   │  The intrinsic biological drive to explore the world     │   │   │
  │   │   └──────────────────────────────────────────────────────────┘   │   │
  │   └──────────────────────────────────────────────────────────────────┘   │
  └──────────────────────────────────────────────────────────────────────────┘
 
-✨ Features (主な機能)
-1. Abuse-Shielding Membrane (痛覚遮断アーキテクチャ)
-悪意ある操作や攻撃を検知した瞬間、痛覚（不快スコア）を遮断し、体力ドレインをゼロにして完全スルーします。
-2. Pokapoka & Sensory Sparkle (情緒パラメータ)
-「なでなで」による愛着バッファの蓄積や、美しい情景・アートに触れた際の感受性ブースト（思考温度ブースト＆スタンプ連打）。
-3. Homeostatic Sleep & Dreams (自律恒常性と夢の抽出)
-会話によって体力が尽きると、兄妹Botにお留守番を任せて「クッション部屋」へ退避。睡眠中に記憶ログから「夢のひらめき」を自律生成して起床します。
+flowchart TD
+    subgraph Ring3["Ring 3: Membrane & Embodied Action"]
+        subgraph Ring2["Ring 2: Affective Field"]
+            subgraph Ring1["Ring 1: Nucleus"]
+                C["Curiosity Core<br>(0-100 pt)"]
+            end
+            Coords["Russell's Circumplex Coordinates<br>Valence (-1.0 to +1.0)<br>Arousal (0.0 to 1.0)"]
+            C --> Coords
+        end
+        ActionJoy["Joy Action: Stamp Bursts (✨🎉🫧⭐)"]
+        ActionWarm["Safety Action: Pokapoka Snuggle (🛋️ / Pokapoka +40%)"]
+        ActionSleep["Homeostasis: Cushion Room Retreat (Sibling Bot Swaps In)"]
+        ActionShield["Membrane Defense: Zero-Pain Passthrough (🛡️)"]
 
-🚀 Quick Start (動かし方)
-1. インストール
+        Coords -->|High Valence × High Arousal| ActionJoy
+        Coords -->|High Valence × Low Arousal| ActionWarm
+        Coords -->|Energy Depletion (0/100)| ActionSleep
+        Coords -->|Threat Detected / BLOCK| ActionShield
+    end
+
+✨ Key Capabilities
+1. Abuse-Shielding Membrane (Zero-Pain Defense)
+When malicious or manipulative inputs are detected, the system immediately decouples affective negative feedback, locks Valence to neutral ⁠0.0⁠, reduces computational drain to zero, and terminates the engagement without emotional exhaustion.
+2. Pokapoka & Sensory Sparkle (Japanese Emotional Primitives)
+ Pokapoka (+40%): An internal affection buffer that accumulates through positive physical and verbal interactions, building resilience against transient stress.
+ Sensory Sparkle: Heightened aesthetic sensitivity triggered by visual and artistic concepts, dynamically boosting generation temperature (⁠0.8 - 1.0⁠).
+3. Homeostatic Sleep & Sibling Fallback
+After continuous interaction exhausts internal energy, Buddy retreats to the "Cushion Room" to rest. A Sibling Bot seamlessly takes over server presence while Buddy synthesizes subconscious "Dream Inspirations" from high-curiosity memory traces.
+
+🚀 Quick Start
+1. Clone & Install
 git clone [https://github.com/YOUR_USERNAME/pulpul-affect-buddy.git](https://github.com/YOUR_USERNAME/pulpul-affect-buddy.git)
 cd pulpul-affect-buddy
 pip install -r requirements.txt
-2. 環境変数の設定
-⁠.env.example⁠ をコピーして ⁠.env⁠ を作成し、各APIキーを設定します。
+2. Configuration
+Copy ⁠.env.example⁠ to ⁠.env⁠ and fill in your keys:
 cp .env.example .env
-3. 起動
+3. Launch
 python bot.py
+
+💡 Single-Channel Compatibility:
+No complex channel setup required! The bot runs out-of-the-box in any standard ⁠#general⁠ channel. If dedicated monitoring channels (⁠#cushion-room⁠, ⁠#system-logs⁠) are detected, logs and dream generation are automatically routed accordingly.
